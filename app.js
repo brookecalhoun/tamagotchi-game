@@ -147,8 +147,6 @@ class Pet {
     }   
 }
 
-
-
 let hungerInterval = null     
 let sleepInterval = null
 let boredInterval = null
@@ -171,18 +169,15 @@ function startGame(){
         sleepiness.textContent = 'Sleepiness: ' + myPet.sleepiness
     },5000)
     
-    
     boredInterval = setInterval(function(){
         myPet.getBored()
         boredom.textContent = 'Boredom: ' + myPet.boredom
     },5000)
     
-    
     ageInterval = setInterval(function(){
         myPet.growPet()
         age.textContent = 'Age: ' + myPet.age
     },10000)
-    
 }
 
 feedBtn.addEventListener('click', myPet.feedPet)

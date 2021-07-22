@@ -82,7 +82,6 @@ class Pet {
             boredom.style.display = 'none'
             hunger.style.display = 'none'
             allButtons.style.display = 'none'
-            // allPets.style.display = 'none'
             allPets.style.transform = 'scaleY(-1)'
         }
     }
@@ -96,6 +95,7 @@ class Pet {
     }
     playWithPet = () => {
         this.boredom--
+        playLaugh()
     }
     getBored = () => {
         this.boredom++
@@ -106,12 +106,12 @@ class Pet {
             boredom.style.display = 'none'
             hungerEl.style.display = 'none'
             allButtons.style.display = 'none'
-            // allPets.style.display = 'none'
             allPets.style.transform = 'scaleY(-1)'
         }
     }
     napPet = () => {
         this.sleepiness--
+        playSleep()
     }
     tirePet = () => {
         this.sleepiness++
@@ -122,7 +122,6 @@ class Pet {
             boredom.style.display = 'none'
             hungerEl.style.display = 'none'
             allButtons.style.display = 'none'
-            // allPets.style.display = 'none'
             allPets.style.transform = 'scaleY(-1)'
         }
     }
@@ -135,7 +134,6 @@ class Pet {
             boredom.style.display = 'none'
             hungerEl.style.display = 'none'
             allButtons.style.display = 'none'
-            // allPets.style.display = 'none'
             allPets.style.transform = 'scaleY(-1)'
         } 
     }   

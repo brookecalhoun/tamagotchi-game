@@ -1,4 +1,6 @@
 body{
+    display: flex;
+    flex-direction: column;
     background-color: #3463AE;
     font-family: 'Sigmar One', cursive;
 }
@@ -14,6 +16,8 @@ button{
     align-content: center;
     width: 150px;
     height: 40px;
+    margin-left:100%;
+    align-items: flex-start;
 } 
 button:hover{
     background-color: #CD3B28;
@@ -61,6 +65,8 @@ button:hover{
 }
 #status-bar{
     display: none;
+    margin-right:100%;
+    align-items: flex-start;
 }
 #pokename{
     width: 600px;
@@ -68,6 +74,7 @@ button:hover{
     background-color: #FFCC00;
     border: 6px solid #3463AE;
     display: none;
+    float: right;
 }
 #pets:hover{
     cursor:pointer;

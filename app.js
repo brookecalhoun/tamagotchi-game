@@ -18,6 +18,19 @@ let bulbImage = document.getElementById('bulbid')
 let charImage = document.getElementById('charmid')
 let squirtleImage = document.getElementById('squirtleid')
 
+function playFeed(){
+    const foodAudio = new Audio('chomp.wav')
+    foodAudio.play()
+}
+function playLaugh(){
+    const laughAudio = new Audio('laugh.wav')
+    laughAudio.play()
+}
+function playSleep(){
+    const sleepAudio = new Audio('snore.wav')
+    sleepAudio.play()
+}
+
 function namePet() {
     nameInput.style.display = 'block'
     h2Id.textContent = 'Name your pet!'
@@ -79,6 +92,7 @@ class Pet {
         console.log(this.hunger)
         console.log('fed')
         hungerEl.textContent = ('Hunger: ' + this.hunger)
+        playFeed()
     }
     playWithPet = () => {
         this.boredom--
@@ -171,12 +185,12 @@ playBtn.addEventListener('click', myPet.playWithPet)
 
 nameInput.addEventListener('keypress',function(event){
     if(event.code === 'Enter'){
-            const inputName = nameInput.value
-            h2Id.textContent = inputName
-            nameInput.style.display='none'
-            startGame()
-        }
-    })
+        const inputName = nameInput.value
+        h2Id.textContent = inputName
+        nameInput.style.display='none'
+        startGame()
+    }
+ })
 
 
 

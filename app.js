@@ -162,22 +162,22 @@ function startGame(){
         myPet.hungerPet()
         console.log(myPet)
         hungerEl.textContent = 'Hunger: ' + myPet.hunger
-    }, 5000)
+    }, 3000)
     
     sleepInterval = setInterval(function(){
         myPet.tirePet()
         sleepiness.textContent = 'Sleepiness: ' + myPet.sleepiness
-    },5000)
+    },3000)
     
     boredInterval = setInterval(function(){
         myPet.getBored()
         boredom.textContent = 'Boredom: ' + myPet.boredom
-    },5000)
+    },3000)
     
     ageInterval = setInterval(function(){
         myPet.growPet()
         age.textContent = 'Age: ' + myPet.age
-    },10000)
+    },8000)
 }
 
 feedBtn.addEventListener('click', myPet.feedPet)

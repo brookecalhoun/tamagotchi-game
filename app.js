@@ -18,7 +18,6 @@ let bulbImage = document.getElementById('bulbid')
 let charImage = document.getElementById('charmid')
 let squirtleImage = document.getElementById('squirtleid')
 
-
 function namePet() {
     nameInput.style.display = 'block'
     h2Id.textContent = 'Name your pet!'
@@ -30,7 +29,7 @@ function selectBulbasaur(){
     namePet()
     bulbImage.classList.add('bigBoi')
     bulbImage.classList.remove('pokemonimage')
-    bulbImage.style.marginLeft = '150px'
+
 }
 function selectCharmander(){
     bulbasaur.style.display = 'none'
@@ -38,7 +37,7 @@ function selectCharmander(){
     namePet()
     charImage.classList.add('bigBoi')
     charImage.classList.remove('pokemonimage')
-    charImage.style.marginLeft = '150px'
+
 }
 function selectSquirtle(){
     bulbasaur.style.display = 'none'
@@ -46,7 +45,7 @@ function selectSquirtle(){
     namePet()
     squirtleImage.classList.add('bigBoi')
     squirtleImage.classList.remove('pokemonimage')
-    squirtleImage.style.marginLeft = '150px'
+
 }
 
 bulbasaur.addEventListener('click', selectBulbasaur)
@@ -70,7 +69,8 @@ class Pet {
             boredom.style.display = 'none'
             hunger.style.display = 'none'
             allButtons.style.display = 'none'
-            allPets.style.display = 'none'
+            // allPets.style.display = 'none'
+            allPets.style.transform = 'scaleY(-1)'
         }
     }
     feedPet = () => {
@@ -92,7 +92,8 @@ class Pet {
             boredom.style.display = 'none'
             hungerEl.style.display = 'none'
             allButtons.style.display = 'none'
-            allPets.style.display = 'none'
+            // allPets.style.display = 'none'
+            allPets.style.transform = 'scaleY(-1)'
         }
     }
     napPet = () => {
@@ -107,7 +108,8 @@ class Pet {
             boredom.style.display = 'none'
             hungerEl.style.display = 'none'
             allButtons.style.display = 'none'
-            allPets.style.display = 'none'
+            // allPets.style.display = 'none'
+            allPets.style.transform = 'scaleY(-1)'
         }
     }
     growPet = () => {
@@ -119,7 +121,8 @@ class Pet {
             boredom.style.display = 'none'
             hungerEl.style.display = 'none'
             allButtons.style.display = 'none'
-            allPets.style.display = 'none'
+            // allPets.style.display = 'none'
+            allPets.style.transform = 'scaleY(-1)'
         } 
     }   
 }

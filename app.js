@@ -64,11 +64,13 @@ class Pet {
     hungerPet = () => {
         this.hunger++
         if(this.hunger === 11){
-            h2Id.textContent = ('Sorry :( Your Pokémon died.') 
+            h2Id.textContent = ('Your Pokémon died.') 
             age.style.display = 'none'
             sleepiness.style.display = 'none'
             boredom.style.display = 'none'
             hunger.style.display = 'none'
+            allButtons.style.display = 'none'
+            allPets.style.display = 'none'
         }
     }
     feedPet = () => {
@@ -84,11 +86,13 @@ class Pet {
     getBored = () => {
         this.boredom++
         if(this.boredom === 11){
-            h2Id.textContent = ('Sorry :( Your Pokémon died.') 
+            h2Id.textContent = ('Your Pokémon died.') 
             age.style.display = 'none'
             sleepiness.style.display = 'none'
             boredom.style.display = 'none'
             hungerEl.style.display = 'none'
+            allButtons.style.display = 'none'
+            allPets.style.display = 'none'
         }
     }
     napPet = () => {
@@ -97,21 +101,25 @@ class Pet {
     tirePet = () => {
         this.sleepiness++
         if(this.sleepiness === 11){
-            h2Id.textContent = ('Sorry :( Your Pokémon died.') 
+            h2Id.textContent = ('Your Pokémon died.') 
             age.style.display = 'none'
             sleepiness.style.display = 'none'
             boredom.style.display = 'none'
             hungerEl.style.display = 'none'
+            allButtons.style.display = 'none'
+            allPets.style.display = 'none'
         }
     }
     growPet = () => {
         this.age++
         if(this.age === 11){
-            h2Id.textContent = ('You were a good Pokémon trainer. Your pet has died happy of old age.') 
+            h2Id.textContent = ('Your Pokémon died.') 
             age.style.display = 'none'
             sleepiness.style.display = 'none'
             boredom.style.display = 'none'
             hungerEl.style.display = 'none'
+            allButtons.style.display = 'none'
+            allPets.style.display = 'none'
         } 
     }   
 }

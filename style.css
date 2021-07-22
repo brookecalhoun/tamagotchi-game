@@ -16,7 +16,7 @@ button{
     align-content: center;
     width: 150px;
     height: 40px;
-    margin-left:100%;
+    margin-right: 80px;
     align-items: flex-start;
 } 
 button:hover{
@@ -33,6 +33,7 @@ button:hover{
 }
 #greeting{
     position: absolute;
+    text-shadow: -2px -2px 0 #3463AE, 2px -2px 0 #3463AE, -2px 2px 0 #3463AE, 2px 2px 0 #3463AE;
 }
 .gameplay{
     display: flex;
@@ -67,6 +68,7 @@ button:hover{
     display: none;
     margin-right:100%;
     align-items: flex-start;
+    text-shadow: -2px -2px 0 #3463AE, 2px -2px 0 #3463AE, -2px 2px 0 #3463AE, 2px 2px 0 #3463AE;
 }
 #pokename{
     width: 600px;
@@ -74,7 +76,6 @@ button:hover{
     background-color: #FFCC00;
     border: 6px solid #3463AE;
     display: none;
-    float: right;
 }
 #pets:hover{
     cursor:pointer;

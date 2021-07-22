@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class='pokelogo'>
+        <img src='pokemonlogo.png' class='logo'>
+    </div>
+    <div class='gameplay'>
+        <h2 id='greeting'>Choose Your Poképet!</h2>
+        <div id='pets' > 
+            <div id='bulbasaur' ><img src='bulbasaur.png'class = 'pokemonimage' id='bulbid'></div> 
+            <div id='squirtle'><img src='squirtle.png' class = 'pokemonimage' id='squirtleid' ></div>
+            <div id='charmander'><img src='charmander.png'class = 'pokemonimage' id='charmid'> </div>
+        </div>
+        <input id='pokename'>
+    </div>
+</br>
+    <ul id='buttons'>
+        <li>
+            <button id='feed'>Feed</button>
+        </li> 
+    </br>
+       <li>
+           <button id='sleep'>Sleep</button>
+       </li> 
+    </br>
+       <li>
+           <button id='play'>Play</button>
+       </li> 
+    </ul>
+    <div id='status-bar'>
+        <div id='hunger'>Hunger: 0</div>
+        <div id='sleepiness'>Sleepiness: 0</div>
+        <div id='boredom'>Boredom: 0</div>
+        <div id='age'>Age: 0</div>
+    </div>
+</body>
+</html>

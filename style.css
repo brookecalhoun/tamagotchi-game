@@ -1,0 +1,78 @@
+body{
+    background-color: #3463AE;
+    font-family: 'Sigmar One', cursive;
+}
+ul{
+    list-style: none;
+} 
+button{
+    font-family: 'Sigmar One', cursive;
+    background-color: #FFCC00;
+    color: #3463AE;
+    border: 8px solid #CD3B28;
+    border-radius: 12px;
+    align-content: center;
+    width: 150px;
+    height: 40px;
+} 
+button:hover{
+    background-color: #CD3B28;
+    color: black;
+    border: 8px solid #FFCC00;
+    cursor: pointer;
+} 
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 500px;
+}
+#greeting{
+    position: absolute;
+}
+.gameplay{
+    display: flex;
+    margin-left: auto;
+    margin-right: 312px;
+    background-color: #333F4C;
+    border: 6px solid #FFCC00;
+    box-shadow:
+    inset 0 0 0 4px #3463AE,
+    inset 0 0 0 8px #CD3B28;
+    width: 400px;
+    height: 250px;
+    border-radius: 20%;
+    justify-content: center;  
+    justify-items: center;
+    color: #FFCC00;
+}
+#pets{
+    display: flex;
+    align-content: baseline;
+    position: relative;
+    top: 30%;
+    right: 5%;
+}
+.pokemonimage{
+    max-height: 85px;
+}
+#buttons{
+    display: none;
+}
+#status-bar{
+    display: none;
+}
+#pokename{
+    width: 600px;
+    height: 25px;
+    background-color: #FFCC00;
+    border: 6px solid #3463AE;
+    display: none;
+}
+#pets:hover{
+    cursor:pointer;
+}
+.bigBoi{
+    height: 150px;
+    margin-top: -30px;
+}

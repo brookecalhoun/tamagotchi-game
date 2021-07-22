@@ -30,6 +30,10 @@ function playSleep(){
     const sleepAudio = new Audio('snore.wav')
     sleepAudio.play()
 }
+function playDead(){
+    const deathAudio = new Audio('death.wav')
+    deathAudio.play()
+}
 
 function namePet() {
     nameInput.style.display = 'block'
@@ -83,6 +87,7 @@ class Pet {
             hunger.style.display = 'none'
             allButtons.style.display = 'none'
             allPets.style.transform = 'scaleY(-1)'
+            playDead()
         }
     }
     feedPet = () => {
@@ -107,7 +112,8 @@ class Pet {
             hungerEl.style.display = 'none'
             allButtons.style.display = 'none'
             allPets.style.transform = 'scaleY(-1)'
-        }
+            playDead()
+        } 
     }
     napPet = () => {
         this.sleepiness--
@@ -123,6 +129,7 @@ class Pet {
             hungerEl.style.display = 'none'
             allButtons.style.display = 'none'
             allPets.style.transform = 'scaleY(-1)'
+            playDead()
         }
     }
     growPet = () => {
@@ -135,7 +142,8 @@ class Pet {
             hungerEl.style.display = 'none'
             allButtons.style.display = 'none'
             allPets.style.transform = 'scaleY(-1)'
-        } 
+            playDead()
+        }
     }   
 }
 

@@ -18,6 +18,22 @@ let bulbImage = document.getElementById('bulbid')
 let charImage = document.getElementById('charmid')
 let squirtleImage = document.getElementById('squirtleid')
 
+function playFeed(){
+    const foodAudio = new Audio('chomp.wav')
+    foodAudio.play()
+}
+function playLaugh(){
+    const laughAudio = new Audio('laugh.wav')
+    laughAudio.play()
+}
+function playSleep(){
+    const sleepAudio = new Audio('snore.wav')
+    sleepAudio.play()
+}
+function playDead(){
+    const deathAudio = new Audio('death.wav')
+    deathAudio.play()
+}
 
 function namePet() {
     nameInput.style.display = 'block'
@@ -30,7 +46,7 @@ function selectBulbasaur(){
     namePet()
     bulbImage.classList.add('bigBoi')
     bulbImage.classList.remove('pokemonimage')
-    bulbImage.style.marginLeft = '150px'
+
 }
 function selectCharmander(){
     bulbasaur.style.display = 'none'
@@ -38,7 +54,7 @@ function selectCharmander(){
     namePet()
     charImage.classList.add('bigBoi')
     charImage.classList.remove('pokemonimage')
-    charImage.style.marginLeft = '150px'
+
 }
 function selectSquirtle(){
     bulbasaur.style.display = 'none'
@@ -46,7 +62,7 @@ function selectSquirtle(){
     namePet()
     squirtleImage.classList.add('bigBoi')
     squirtleImage.classList.remove('pokemonimage')
-    squirtleImage.style.marginLeft = '150px'
+
 }
 
 bulbasaur.addEventListener('click', selectBulbasaur)
@@ -70,7 +86,8 @@ class Pet {
             boredom.style.display = 'none'
             hunger.style.display = 'none'
             allButtons.style.display = 'none'
-            allPets.style.display = 'none'
+            allPets.style.transform = 'scaleY(-1)'
+            playDead()
         }
     }
     feedPet = () => {
@@ -79,9 +96,11 @@ class Pet {
         console.log(this.hunger)
         console.log('fed')
         hungerEl.textContent = ('Hunger: ' + this.hunger)
+        playFeed()
     }
     playWithPet = () => {
         this.boredom--
+        playLaugh()
     }
     getBored = () => {
         this.boredom++
@@ -92,11 +111,13 @@ class Pet {
             boredom.style.display = 'none'
             hungerEl.style.display = 'none'
             allButtons.style.display = 'none'
-            allPets.style.display = 'none'
-        }
+            allPets.style.transform = 'scaleY(-1)'
+            playDead()
+        } 
     }
     napPet = () => {
         this.sleepiness--
+        playSleep()
     }
     tirePet = () => {
         this.sleepiness++
@@ -107,7 +128,8 @@ class Pet {
             boredom.style.display = 'none'
             hungerEl.style.display = 'none'
             allButtons.style.display = 'none'
-            allPets.style.display = 'none'
+            allPets.style.transform = 'scaleY(-1)'
+            playDead()
         }
     }
     growPet = () => {
@@ -119,12 +141,11 @@ class Pet {
             boredom.style.display = 'none'
             hungerEl.style.display = 'none'
             allButtons.style.display = 'none'
-            allPets.style.display = 'none'
-        } 
+            allPets.style.transform = 'scaleY(-1)'
+            playDead()
+        }
     }   
 }
-
-
 
 let hungerInterval = null     
 let sleepInterval = null
@@ -148,18 +169,15 @@ function startGame(){
         sleepiness.textContent = 'Sleepiness: ' + myPet.sleepiness
     },5000)
     
-    
     boredInterval = setInterval(function(){
         myPet.getBored()
         boredom.textContent = 'Boredom: ' + myPet.boredom
     },5000)
     
-    
     ageInterval = setInterval(function(){
         myPet.growPet()
         age.textContent = 'Age: ' + myPet.age
     },10000)
-    
 }
 
 feedBtn.addEventListener('click', myPet.feedPet)
@@ -168,12 +186,14 @@ playBtn.addEventListener('click', myPet.playWithPet)
 
 nameInput.addEventListener('keypress',function(event){
     if(event.code === 'Enter'){
-            const inputName = nameInput.value
-            h2Id.textContent = inputName
-            nameInput.style.display='none'
-            startGame()
-        }
-    })
+        const inputName = nameInput.value
+        h2Id.textContent = inputName
+        nameInput.style.display='none'
+        startGame()
+    }
+ })
+
+
 
 
 

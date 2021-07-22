@@ -16,7 +16,7 @@ button{
     align-content: center;
     width: 150px;
     height: 40px;
-    margin-right: 80px;
+    margin-right: 800px;
     align-items: flex-start;
 } 
 button:hover{
@@ -38,14 +38,14 @@ button:hover{
 .gameplay{
     display: flex;
     margin-left: auto;
-    margin-right: 345px;
+    margin-right: auto;
     background-color: #333F4C;
     border: 6px solid #FFCC00;
     box-shadow:
     inset 0 0 0 4px #3463AE,
     inset 0 0 0 8px #CD3B28;
     width: 400px;
-    height: 250px;
+    height: 280px;
     border-radius: 20%;
     justify-content: center;  
     justify-items: center;
@@ -54,12 +54,12 @@ button:hover{
 #pets{
     display: flex;
     align-content: baseline;
-    position: relative;
-    top: 30%;
-    right: 5%;
+    align-items: center;
+    position: fixed; 
+    margin-top: 100px;
 }
 .pokemonimage{
-    max-height: 85px;
+    max-height: 100px;
 }
 #buttons{
     display: none;
@@ -71,10 +71,12 @@ button:hover{
     text-shadow: -2px -2px 0 #3463AE, 2px -2px 0 #3463AE, -2px 2px 0 #3463AE, 2px 2px 0 #3463AE;
 }
 #pokename{
-    width: 600px;
+    width: 200px;
     height: 25px;
     background-color: #FFCC00;
     border: 6px solid #3463AE;
+    margin-top: 215px;
+    margin-right: 15px;
     display: none;
 }
 #pets:hover{
@@ -84,3 +86,5 @@ button:hover{
     height: 150px;
     margin-top: -30px;
 }
+
+

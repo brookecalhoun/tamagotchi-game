@@ -32,9 +32,13 @@ This is a game where you can take care of a Pokémon in the same manner as a tam
 whatever you want. Once the pet is chosen, you must feed, play with, and put to bed the Pokémon pet before any of his status levels reach 10, because at that point, 
 he will die.
 
+//////////////////////////////////////////////////////////////////////////////////
+
 *Installation Instructions:*
 
 Gameplay is best enjoyed on a desktop or laptop.
+
+//////////////////////////////////////////////////////////////////////////////////
 
 *Approach:*
 
@@ -44,7 +48,11 @@ as a kid and used it in choosing the starter Pokémon for my game. I also google
 generated map on google as well, and used that as my background. For my javascript, I first created variables for each element in my HTML so I could easily access them
 as I was coding. I focused on working in order of how my game was going to be played, while skipping the more difficult things to come back to later. 
 
+//////////////////////////////////////////////////////////////////////////////////
+
 *Unsolved Problems:*
 
 1. I could not figure out how to add a break in the text line when changing the text in javascript, so I had to keep the dying messages short.
 1. The Pokémon pets are all clickable all the time so at any point during the game it would run the click function attached to the pet if it was clicked.
+
+//////////////////////////////////////////////////////////////////////////////////

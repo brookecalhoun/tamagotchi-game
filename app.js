@@ -17,6 +17,8 @@ let age = document.getElementById('age')
 let bulbImage = document.getElementById('bulbid')
 let charImage = document.getElementById('charmid')
 let squirtleImage = document.getElementById('squirtleid')
+let dead = false
+let Clicked = false
 
 function playFeed(){
     const foodAudio = new Audio('chomp.wav')
@@ -33,6 +35,7 @@ function playSleep(){
 function playDead(){
     const deathAudio = new Audio('death.wav')
     deathAudio.play()
+    dead = true
 }
 
 function namePet() {
@@ -41,28 +44,31 @@ function namePet() {
 }
 
 function selectBulbasaur(){
+    if(!Clicked){
     charmander.style.display = 'none'
     squirtle.style.display = 'none'
     namePet()
     bulbImage.classList.add('bigBoi')
     bulbImage.classList.remove('pokemonimage')
-
+    }
 }
 function selectCharmander(){
+    if(!Clicked){
     bulbasaur.style.display = 'none'
     squirtle.style.display= 'none'
     namePet()
     charImage.classList.add('bigBoi')
     charImage.classList.remove('pokemonimage')
-
+    }
 }
 function selectSquirtle(){
+    if(!Clicked){
     bulbasaur.style.display = 'none'
     charmander.style.display = 'none'
     namePet()
     squirtleImage.classList.add('bigBoi')
     squirtleImage.classList.remove('pokemonimage')
-
+    }
 }
 
 bulbasaur.addEventListener('click', selectBulbasaur)
@@ -79,7 +85,7 @@ class Pet {
     } 
     hungerPet = () => {
         this.hunger++
-        if(this.hunger === 11){
+        if(this.hunger === 11 && !dead){
             h2Id.textContent = ('Your Pokémon died.') 
             age.style.display = 'none'
             sleepiness.style.display = 'none'
@@ -104,7 +110,7 @@ class Pet {
     }
     getBored = () => {
         this.boredom++
-        if(this.boredom === 11){
+        if(this.boredom === 11 && !dead){
             h2Id.textContent = ('Your Pokémon died.') 
             age.style.display = 'none'
             sleepiness.style.display = 'none'
@@ -121,7 +127,7 @@ class Pet {
     }
     tirePet = () => {
         this.sleepiness++
-        if(this.sleepiness === 11){
+        if(this.sleepiness === 11 && !dead){
             h2Id.textContent = ('Your Pokémon died.') 
             age.style.display = 'none'
             sleepiness.style.display = 'none'
@@ -134,7 +140,7 @@ class Pet {
     }
     growPet = () => {
         this.age++
-        if(this.age === 11){
+        if(this.age === 11 && !dead){
             h2Id.textContent = ('Your Pokémon died.') 
             age.style.display = 'none'
             sleepiness.style.display = 'none'

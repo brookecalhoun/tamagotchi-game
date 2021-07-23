@@ -2,6 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     background: url('pokeback.png');
+    background-size: cover;
     font-family: 'Sigmar One', cursive;
 }
 ul{

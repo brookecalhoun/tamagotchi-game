@@ -19,6 +19,7 @@ let charImage = document.getElementById('charmid')
 let squirtleImage = document.getElementById('squirtleid')
 let ashButton = document.getElementById('ash')
 let ashDiv = document.getElementById('ashsurprise')
+let enterButton = document.getElementById('enterbutton')
 let dead = false
 let Clicked = false
 
@@ -67,8 +68,8 @@ function playDead(){
     deathAudio.play()
     dead = true
 }
-
 function namePet() {
+    enterButton.style.display = 'block'
     nameInput.style.display = 'block'
     h2Id.textContent = 'Name your pet!'
     ashButton.style.display ='none'
@@ -230,9 +231,17 @@ nameInput.addEventListener('keypress',function(event){
     if(event.code === 'Enter'){
         const inputName = nameInput.value
         h2Id.textContent = inputName
-        nameInput.style.display='none'
+        nameInput.style.display ='none'
+        enterButton.style.display = 'none'
         startGame()
     }
+ })
+enterButton.addEventListener('click',function(){
+        const inputName = nameInput.value
+        h2Id.textContent = inputName
+        nameInput.style.display ='none'
+        enterButton.style.display ='none'
+        startGame()
  })
 
 

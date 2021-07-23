@@ -20,18 +20,22 @@ let squirtleImage = document.getElementById('squirtleid')
 let dead = false
 let Clicked = false
 
+
 function playFeed(){
     const foodAudio = new Audio('chomp.wav')
     foodAudio.play()
 }
+
 function playLaugh(){
     const laughAudio = new Audio('laugh.wav')
     laughAudio.play()
 }
+
 function playSleep(){
     const sleepAudio = new Audio('snore.wav')
     sleepAudio.play()
 }
+
 function playDead(){
     const deathAudio = new Audio('death.wav')
     deathAudio.play()
@@ -52,6 +56,7 @@ function selectBulbasaur(){
     bulbImage.classList.remove('pokemonimage')
     }
 }
+
 function selectCharmander(){
     if(!Clicked){
     bulbasaur.style.display = 'none'
@@ -61,6 +66,7 @@ function selectCharmander(){
     charImage.classList.remove('pokemonimage')
     }
 }
+
 function selectSquirtle(){
     if(!Clicked){
     bulbasaur.style.display = 'none'

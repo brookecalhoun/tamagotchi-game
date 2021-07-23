@@ -42,7 +42,7 @@ Gameplay is best enjoyed on a desktop or laptop.
 
 *Approach:*
 
-I initially was very overwhelmed, because tamagatchi is a little bit before my time and I wasn't quite sure what I was going to create. But, I decided to relate the 
+I was initially very overwhelmed with the project, because tamagatchi is a little bit before my time and I wasn't quite sure what I was going to create. But, I decided to relate the 
 project to a game I was more familiar with, Pokémon, and that made this much easier to do. I incorporated my knowledge from playing Pokémon Red on my GameBoy
 as a kid and used it in choosing the starter Pokémon for my game. I also google searched Pokémon color palettes and incorporated that in my styling. I found an auto
 generated map on google as well, and used that as my background. For my javascript, I first created variables for each element in my HTML so I could easily access them

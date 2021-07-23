@@ -17,8 +17,23 @@ let age = document.getElementById('age')
 let bulbImage = document.getElementById('bulbid')
 let charImage = document.getElementById('charmid')
 let squirtleImage = document.getElementById('squirtleid')
+let ashButton = document.getElementById('ash')
+let ashDiv = document.getElementById('ashsurprise')
 let dead = false
 let Clicked = false
+
+function playAsh(){
+    const ashAudio = new Audio('ichooseyou.mp3')
+    ashAudio.play()
+}
+function ashSurprise(){
+    playAsh()
+    ashButton.style.backgroundImage = 'url(ash.png)'
+    ashButton.textContent =''
+    ashButton.style.height = '200px'
+    ashButton.style.width ='230px'
+}
+ashButton.addEventListener('click', ashSurprise)
 
 function playBulbasaur(){
     const bulbAudio = new Audio('bulbasaur-sound.mp3')
@@ -56,6 +71,7 @@ function playDead(){
 function namePet() {
     nameInput.style.display = 'block'
     h2Id.textContent = 'Name your pet!'
+    ashButton.style.display ='none'
 }
 
 function selectBulbasaur(){

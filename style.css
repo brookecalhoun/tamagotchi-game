@@ -8,6 +8,25 @@ body{
 ul{
     list-style: none;
 } 
+#ash{
+    font-family: 'Sigmar One', cursive;
+    background-color: #FFCC00;
+    color: #3463AE;
+    border: 8px solid #CD3B28;
+    border-radius: 12px;
+    align-content: center;
+    width: 150px;
+    height: 100px;
+    margin-right: 800px;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+}
+#ash:hover{
+    background-color: #CD3B28;
+    color: black;
+    border: 8px solid #FFCC00;
+    cursor: pointer;
+}
 button{
     font-family: 'Sigmar One', cursive;
     background-color: #FFCC00;

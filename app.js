@@ -20,7 +20,18 @@ let squirtleImage = document.getElementById('squirtleid')
 let dead = false
 let Clicked = false
 
-
+function playBulbasaur(){
+    const bulbAudio = new Audio('bulbasaur-sound.mp3')
+    bulbAudio.play()
+}
+function playCharmander(){
+    const charAudio = new Audio('charmander-sound.mp3')
+    charAudio.play()
+}
+function playSquirtle(){
+    const squirtleAudio = new Audio('squirtle-sound.mp3')
+    squirtleAudio.play()
+}
 function playFeed(){
     const foodAudio = new Audio('chomp.wav')
     foodAudio.play()
@@ -49,31 +60,34 @@ function namePet() {
 
 function selectBulbasaur(){
     if(!Clicked){
-    charmander.style.display = 'none'
-    squirtle.style.display = 'none'
-    namePet()
-    bulbImage.classList.add('bigBoi')
-    bulbImage.classList.remove('pokemonimage')
+        playBulbasaur()
+        charmander.style.display = 'none'
+        squirtle.style.display = 'none'
+        namePet()
+        bulbImage.classList.add('bigBoi')
+        bulbImage.classList.remove('pokemonimage')
     }
 }
 
 function selectCharmander(){
     if(!Clicked){
-    bulbasaur.style.display = 'none'
-    squirtle.style.display= 'none'
-    namePet()
-    charImage.classList.add('bigBoi')
-    charImage.classList.remove('pokemonimage')
+        playCharmander()
+        bulbasaur.style.display = 'none'
+        squirtle.style.display= 'none'
+        namePet()
+        charImage.classList.add('bigBoi')
+        charImage.classList.remove('pokemonimage')
     }
 }
 
 function selectSquirtle(){
     if(!Clicked){
-    bulbasaur.style.display = 'none'
-    charmander.style.display = 'none'
-    namePet()
-    squirtleImage.classList.add('bigBoi')
-    squirtleImage.classList.remove('pokemonimage')
+        playSquirtle()
+        bulbasaur.style.display = 'none'
+        charmander.style.display = 'none'
+        namePet()
+        squirtleImage.classList.add('bigBoi')
+        squirtleImage.classList.remove('pokemonimage')
     }
 }
 

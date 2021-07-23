@@ -55,7 +55,7 @@ button:hover{
     display: flex;
     align-content: baseline;
     align-items: center;
-    position: fixed; 
+    position: absolute; 
     margin-top: 100px;
 }
 .pokemonimage{

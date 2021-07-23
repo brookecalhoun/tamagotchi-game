@@ -1,7 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: #3463AE;
+    background: url('pokeback.png');
     font-family: 'Sigmar One', cursive;
 }
 ul{

@@ -132,6 +132,24 @@ button:hover{
 #buttons{
     display: none;
 }
+#feed:hover{
+    background-color: #CD3B28;
+    color: black;
+    border: 8px solid #FFCC00;
+    cursor: pointer;
+}
+#sleep:hover{
+    background-color: #CD3B28;
+    color: black;
+    border: 8px solid #FFCC00;
+    cursor: pointer;
+}
+#play:hover{
+    background-color: #CD3B28;
+    color: black;
+    border: 8px solid #FFCC00;
+    cursor: pointer;
+}
 #status-bar{
     display: none;
     margin-right:100%;

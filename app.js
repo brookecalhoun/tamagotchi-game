@@ -83,6 +83,7 @@ function selectBulbasaur(){
         namePet()
         bulbImage.classList.add('bigBoi')
         bulbImage.classList.remove('pokemonimage')
+        Clicked = true
     }
 }
 
@@ -94,6 +95,7 @@ function selectCharmander(){
         namePet()
         charImage.classList.add('bigBoi')
         charImage.classList.remove('pokemonimage')
+        Clicked = true
     }
 }
 
@@ -105,6 +107,7 @@ function selectSquirtle(){
         namePet()
         squirtleImage.classList.add('bigBoi')
         squirtleImage.classList.remove('pokemonimage')
+        Clicked = true
     }
 }
 

@@ -5,13 +5,16 @@ body{
     background-size: cover;
     font-family: 'Sigmar One', cursive;
 }
+
 ul{
     list-style: none;
-} 
+}
+
 #nameinputbutton{
     display: flex;
     align-content: baseline;
 }
+
 #enterbutton{
     font-family: 'Sigmar One', cursive;
     background-color: #FFCC00;
@@ -26,12 +29,14 @@ ul{
     margin-bottom: 3%;
     display: none;
 }
+
 #enterbutton:hover{
     background-color: #CD3B28;
     color: black;
     border: 3px solid #FFCC00;
     cursor: pointer;
 }
+
 #ash{
     font-family: 'Sigmar One', cursive;
     background-color: #FFCC00;
@@ -45,12 +50,14 @@ ul{
     align-items: flex-start;
     background-repeat: no-repeat;
 }
+
 #ash:hover{
     background-color: #CD3B28;
     color: black;
     border: 8px solid #FFCC00;
     cursor: pointer;
 }
+
 #feed{
     font-family: 'Sigmar One', cursive;
     background-color: #FFCC00;
@@ -62,7 +69,8 @@ ul{
     height: 40px;
     margin-right: 800px;
     align-items: flex-start;
-} 
+}
+
 #sleep{
     font-family: 'Sigmar One', cursive;
     background-color: #FFCC00;
@@ -75,6 +83,7 @@ ul{
     margin-right: 800px;
     align-items: flex-start; 
 }
+
 #play{
     font-family: 'Sigmar One', cursive;
     background-color: #FFCC00;
@@ -87,12 +96,14 @@ ul{
     margin-right: 800px;
     align-items: flex-start;
 }
+
 button:hover{
     background-color: #CD3B28;
     color: black;
     border: 8px solid #FFCC00;
     cursor: pointer;
 } 
+
 .logo{
     margin-left: auto;
     margin-right: auto;
@@ -103,6 +114,7 @@ button:hover{
     position: absolute;
     text-shadow: -2px -2px 0 #3463AE, 2px -2px 0 #3463AE, -2px 2px 0 #3463AE, 2px 2px 0 #3463AE;
 }
+
 .gameplay{
     display: flex;
     margin-left: auto;
@@ -119,6 +131,7 @@ button:hover{
     justify-items: center;
     color: #FFCC00;
 }
+
 #pets{
     display: flex;
     align-content: baseline;
@@ -126,36 +139,43 @@ button:hover{
     position: absolute; 
     margin-top: 100px;
 }
+
 .pokemonimage{
     max-height: 100px;
 }
+
 #buttons{
     display: none;
 }
+
 #feed:hover{
     background-color: #CD3B28;
     color: black;
     border: 8px solid #FFCC00;
     cursor: pointer;
 }
+
 #sleep:hover{
     background-color: #CD3B28;
     color: black;
     border: 8px solid #FFCC00;
     cursor: pointer;
 }
+
 #play:hover{
     background-color: #CD3B28;
     color: black;
     border: 8px solid #FFCC00;
     cursor: pointer;
 }
+
 #status-bar{
     display: none;
     margin-right:100%;
     align-items: flex-start;
     text-shadow: -2px -2px 0 #3463AE, 2px -2px 0 #3463AE, -2px 2px 0 #3463AE, 2px 2px 0 #3463AE;
 }
+
 #pokename{
     width: 200px;
     height: 25px;
@@ -165,9 +185,11 @@ button:hover{
     margin-right: 15px;
     display: none;
 }
+
 #pets:hover{
     cursor:pointer;
 }
+
 .bigBoi{
     height: 150px;
     margin-top: -30px;

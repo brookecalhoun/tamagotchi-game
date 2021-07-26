@@ -36,7 +36,7 @@ he will die.
 
 *Installation Instructions:*
 
-Gameplay is best enjoyed on a desktop or laptop.
+No need to install anything- just press the link and enjoy on a laptop or desktop.
 
 //////////////////////////////////////////////////////////////////////////////////
 

@@ -151,14 +151,15 @@ class Pet {
     }
     feedPet = () => {
         console.log(this.hunger)
-        this.hunger--
+        this.hunger = 0
         console.log(this.hunger)
         console.log('fed')
         hungerEl.textContent = ('Hunger: ' + this.hunger)
         playFeed()
     }
     playWithPet = () => {
-        this.boredom--
+        this.boredom = 0
+        boredom.textContent = ('Boredom: ' + this.boredom)
         playLaugh()
     }
     getBored = () => {
@@ -175,7 +176,8 @@ class Pet {
         } 
     }
     napPet = () => {
-        this.sleepiness--
+        this.sleepiness = 0
+        sleepiness.textContent = ('Sleepiness: ' + this.sleepiness)
         playSleep()
     }
     tirePet = () => {

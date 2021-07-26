@@ -19,9 +19,9 @@
 1. Once chosen, the player can name their pokemon in the input field and press ‘Enter’
 1. Their chosen pokemon will make a sound then that pokemon, the chosen pokemon name, and the status numbers/buttons will appear.
 1. The hunger, sleepiness, and boredom of the pokemon will increase every 3 seconds, while the age will increase every 8.
-1. When ‘feed’ is pressed, the hunger number will decrease & an eating sound will play
-1. When ‘sleep’ is pressed, the sleepiness number will decrease & a snore sound will play
-1. When ‘play’ is pressed, the boredom bar number decrease & a laugh sound will play
+1. When ‘feed’ is pressed, the hunger number will decrease to zero & an eating sound will play
+1. When ‘sleep’ is pressed, the sleepiness number will decrease to zero & a snore sound will play
+1. When ‘play’ is pressed, the boredom bar number decrease to zero & a laugh sound will play
 1. Once any of the measures reach 10, the pokemon will turn upside down, a game over sound will play, and a message announcing his death will appear.
 
 //////////////////////////////////////////////////////////////////////////////////

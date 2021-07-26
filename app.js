@@ -1,3 +1,5 @@
+////////Variables////////
+
 let bulbasaur = document.getElementById('bulbasaur')
 let squirtle = document.getElementById('squirtle')
 let charmander = document.getElementById('charmander')
@@ -23,6 +25,8 @@ let enterButton = document.getElementById('enterbutton')
 let dead = false
 let Clicked = false
 
+////////Ash Surprise Button////////
+
 function playAsh(){
     const ashAudio = new Audio('ichooseyou.mp3')
     ashAudio.play()
@@ -35,6 +39,8 @@ function ashSurprise(){
     ashButton.style.width ='230px'
 }
 ashButton.addEventListener('click', ashSurprise)
+
+////////Sounds////////
 
 function playBulbasaur(){
     const bulbAudio = new Audio('bulbasaur-sound.mp3')
@@ -68,6 +74,9 @@ function playDead(){
     deathAudio.play()
     dead = true
 }
+
+////////Functions////////
+
 function namePet() {
     enterButton.style.display = 'block'
     nameInput.style.display = 'block'
@@ -118,6 +127,7 @@ bulbasaur.addEventListener('click', selectBulbasaur)
 charmander.addEventListener('click', selectCharmander)
 squirtle.addEventListener('click', selectSquirtle)
 
+////////Pet Class////////
 
 class Pet {
     constructor(hunger, boredom, sleepiness, age){
@@ -201,7 +211,11 @@ let sleepInterval = null
 let boredInterval = null
 let ageInterval = null
 
+////////Instantiate Pet////////
+
 let myPet = new Pet(0,0,0,0)
+
+////////Start Game Function////////
 
 function startGame(){
     allButtons.style.display='block'
@@ -228,6 +242,8 @@ function startGame(){
         age.textContent = 'Age: ' + myPet.age
     },8000)
 }
+
+////////Event Listeners////////
 
 feedBtn.addEventListener('click', myPet.feedPet)
 sleepBtn.addEventListener('click', myPet.napPet)

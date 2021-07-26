@@ -31,6 +31,7 @@ function playAsh(){
     const ashAudio = new Audio('ichooseyou.mp3')
     ashAudio.play()
 }
+
 function ashSurprise(){
     playAsh()
     ashButton.style.backgroundImage = 'url(ash.png)'
@@ -38,6 +39,7 @@ function ashSurprise(){
     ashButton.style.height = '200px'
     ashButton.style.width ='230px'
 }
+
 ashButton.addEventListener('click', ashSurprise)
 
 ////////Sounds////////
@@ -46,14 +48,17 @@ function playBulbasaur(){
     const bulbAudio = new Audio('bulbasaur-sound.mp3')
     bulbAudio.play()
 }
+
 function playCharmander(){
     const charAudio = new Audio('charmander-sound.mp3')
     charAudio.play()
 }
+
 function playSquirtle(){
     const squirtleAudio = new Audio('squirtle-sound.mp3')
     squirtleAudio.play()
 }
+
 function playFeed(){
     const foodAudio = new Audio('chomp.wav')
     foodAudio.play()
@@ -136,6 +141,7 @@ class Pet {
         this.sleepiness = sleepiness
         this.age = age
     } 
+
     hungerPet = () => {
         this.hunger++
         if(this.hunger === 11 && !dead){
@@ -149,6 +155,7 @@ class Pet {
             playDead()
         }
     }
+
     feedPet = () => {
         console.log(this.hunger)
         this.hunger = 0
@@ -157,11 +164,13 @@ class Pet {
         hungerEl.textContent = ('Hunger: ' + this.hunger)
         playFeed()
     }
+
     playWithPet = () => {
         this.boredom = 0
         boredom.textContent = ('Boredom: ' + this.boredom)
         playLaugh()
     }
+
     getBored = () => {
         this.boredom++
         if(this.boredom === 11 && !dead){
@@ -175,11 +184,13 @@ class Pet {
             playDead()
         } 
     }
+
     napPet = () => {
         this.sleepiness = 0
         sleepiness.textContent = ('Sleepiness: ' + this.sleepiness)
         playSleep()
     }
+
     tirePet = () => {
         this.sleepiness++
         if(this.sleepiness === 11 && !dead){
@@ -193,6 +204,7 @@ class Pet {
             playDead()
         }
     }
+
     growPet = () => {
         this.age++
         if(this.age === 11 && !dead){
@@ -261,6 +273,7 @@ nameInput.addEventListener('keypress',function(event){
         startGame()
     }
  })
+ 
 enterButton.addEventListener('click',function(){
         const inputName = nameInput.value
         h2Id.textContent = inputName

@@ -52,7 +52,7 @@ as I was coding. I focused on working in order of how my game was going to be pl
 
 *Unsolved Problems:*
 
-1. I could not figure out how to add a break in the text line when changing the text in javascript, so I had to keep the dying messages short.
-1. The Pokémon pets are all clickable all the time so at any point during the game it would run the click function attached to the pet if it was clicked.
+1. I did not have time to figure out how to add a break in the text line when changing the text in javascript, so I had to keep the dying messages short.
+1. I wanted to make the Pokémon evolve after specific ages but I also didn't have time for that.
 
 //////////////////////////////////////////////////////////////////////////////////

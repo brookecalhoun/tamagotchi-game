@@ -215,6 +215,7 @@ let ageInterval = null
 
 let myPet = new Pet(0,0,0,0)
 
+
 ////////Start Game Function////////
 
 function startGame(){
